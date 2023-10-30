@@ -84,11 +84,15 @@ def Movimiento(tablero, contador=0):
             else:
                 valor_introducido = input(f"\n{jugador2} es tu turno! Introduzca un valor del 1 al 9: ")
             valor_introducido = int(valor_introducido)
-            celda = valor_introducido - 1                                                                   # Se establecen cálculos sobre las variables celda, filas
-            filas = celda // 3                                                                              # y columnas para que cada valor introducido (del 1 al 9)
-            columna = celda % 3                                                                             # se corresponda con el índice correcto en el tablero. 
-            opcion_elegida = tablero[filas][columna]                                                        # La variable "opción_elegida" si no detecta ningún error                                                                                              
-            espacios_ocupados = ("O", "X")                                                                  # se actuliza de acuerdo al valor introducido. 
+            # Se establecen cálculos sobre las variables celda, filas y columnas para que cada valor introducido 
+            # (del 1 al 9) y columnas para que cada valor introducido (del 1 al 9) se corresponda con el índice 
+            # correcto en el tablero.
+            celda = valor_introducido - 1                                                                   
+            filas = celda // 3                                                                              
+            columna = celda % 3  
+            # La variable "opción_elegida" si no detecta ningún error se actuliza de acuerdo al valor introducido.                                                                           
+            opcion_elegida = tablero[filas][columna]                                                                                                                                                      
+            espacios_ocupados = ("O", "X")                                                                   
         
             if valor_introducido < 1 or valor_introducido > 9 or valor_introducido == None:
                 raise IndexError
