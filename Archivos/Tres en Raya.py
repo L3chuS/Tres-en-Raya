@@ -125,8 +125,9 @@ def Victoria(tablero):
             return jugador1
         # Verifica las filas 1, 2 y 3 para el jugador 2
         elif tablero[f][0] == tablero[f][1] == tablero[f][2] == "O":       
-            return jugador2              
-        elif tablero[0][f] == tablero[1][f] == tablero[2][f] == "X":      # Verifica las columnas 1, 2 y 3 para el jugador 1    
+            return jugador2    
+        # Verifica las columnas 1, 2 y 3 para el jugador 1           
+        elif tablero[0][f] == tablero[1][f] == tablero[2][f] == "X":         
             return jugador1
         elif tablero[0][f] == tablero[1][f] == tablero[2][f] == "O":      # Verifica las columnas 1, 2 y 3 para el jugador 2    
             return jugador2
