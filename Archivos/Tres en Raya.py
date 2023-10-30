@@ -78,8 +78,9 @@ def Movimiento(tablero, contador=0):
     
     while (True):
         try:
-            if contador % 2 == 0:                                                                           # Se establece un contador que representa el jugador
-                valor_introducido = input(f"\n{jugador1} es tu turno! Introduzca un valor del 1 al 9: ")    # 1 si es par o el 2 si es impar
+            # Se establece un contador que representa el jugador 1 si es par o el 2 si es impar.
+            if contador % 2 == 0:                                                                           
+                valor_introducido = input(f"\n{jugador1} es tu turno! Introduzca un valor del 1 al 9: ")    
             else:
                 valor_introducido = input(f"\n{jugador2} es tu turno! Introduzca un valor del 1 al 9: ")
             valor_introducido = int(valor_introducido)
