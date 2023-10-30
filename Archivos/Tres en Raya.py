@@ -52,10 +52,13 @@ def DibujarTablero(tablero):
         print("+------------" * 3, end="+\n")
         print("|            " * 4)
         print("")
+        # Cuando los jugadores elijen un valor esta función recupera
+        # la lista "tablero" modificada y se imprime la opción elegida
+        # en el campo que corresponda.
         for columnas in range(3):
-            print(f"|      {tablero[filas][columnas]}     ", end="")                                        # Cuando los jugadores elijen un valor esta función recupera 
-        print("|")                                                                                          # la lista "tablero" modificada y se imprime la opción elegida
-        print("")                                                                                           # en el campo que corresponda.
+            print(f"|      {tablero[filas][columnas]}     ", end="")                                         
+        print("|")                                                                                          
+        print("")                                                                                           
         print("|            " * 4)                                  
     print("+------------" * 3, end="+\n")
     return ""
