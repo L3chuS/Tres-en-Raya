@@ -120,7 +120,8 @@ def Victoria(tablero):
     # 1 o 2 si encuentra alguna combinación ganadora.   
     
     for f in range(3):
-        if tablero[f][0] == tablero[f][1] == tablero[f][2] == "X":        # Verifica las filas 1, 2 y 3 para el jugador 1    
+        # Verifica las filas 1, 2 y 3 para el jugador 1    
+        if tablero[f][0] == tablero[f][1] == tablero[f][2] == "X":        
             return jugador1
         elif tablero[f][0] == tablero[f][1] == tablero[f][2] == "O":      # Verifica las filas 1, 2 y 3 para el jugador 2 
             return jugador2              
