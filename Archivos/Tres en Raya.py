@@ -129,17 +129,22 @@ def Victoria(tablero):
         # Verifica las columnas 1, 2 y 3 para el jugador 1           
         elif tablero[0][f] == tablero[1][f] == tablero[2][f] == "X":         
             return jugador1
-        elif tablero[0][f] == tablero[1][f] == tablero[2][f] == "O":      # Verifica las columnas 1, 2 y 3 para el jugador 2    
+        # Verifica las columnas 1, 2 y 3 para el jugador 2 
+        elif tablero[0][f] == tablero[1][f] == tablero[2][f] == "O":         
             return jugador2
-        
-    if tablero[0][0] == tablero[1][1] == tablero[2][2] == "X":            # Verifica la diagonal de los casilleros 1, 5 y 9
-        return jugador1                                                   # para el jugador 1.
-    elif tablero[0][0] == tablero[1][1] == tablero[2][2] == "O":          # Verifica la diagonal de los casilleros 1, 5 y 9
-        return jugador2                                                   # para el jugador 2.
-    elif tablero[0][2] == tablero[1][1] == tablero[2][0] == "X":          # Verifica la diagonal de los casilleros 3, 5 y 7
-        return jugador1                                                   # para el jugador 1.
-    elif tablero[0][2] == tablero[1][1] == tablero[2][0] == "O":          # Verifica la diagonal de los casilleros 3, 5 y 7
-        return jugador2                                                   # para el jugador 2.
+
+    # Verifica la diagonal de los casilleros 1, 5 y 9 para el jugador 1.    
+    if tablero[0][0] == tablero[1][1] == tablero[2][2] == "X":            
+        return jugador1  
+    # Verifica la diagonal de los casilleros 1, 5 y 9 para el jugador 2.                                                 
+    elif tablero[0][0] == tablero[1][1] == tablero[2][2] == "O":          
+        return jugador2 
+    # Verifica la diagonal de los casilleros 3, 5 y 7 para el jugador 1.                                                   
+    elif tablero[0][2] == tablero[1][1] == tablero[2][0] == "X":          
+        return jugador1  
+    # Verifica la diagonal de los casilleros 3, 5 y 7 para el jugador 2.                                                  
+    elif tablero[0][2] == tablero[1][1] == tablero[2][0] == "O":          
+        return jugador2                                                    
 
 
 #################################
@@ -150,59 +155,74 @@ try:
 
     while(True):
 
-        if ComienzaElJuego() == None:                                                               # Primer bucle que determina si el juego comienza o no.
+        # Primer bucle que determina si el juego comienza o no.
+        if ComienzaElJuego() == None:                                                               
             break
         else:
 
-            tablero = [[1,2,3], [4,5,6], [7,8,9]]                                                   # Tablero que representa los valores iniciales de cada fila y columna.
-            contador = 0                                                                            # Variable que cuenta los movimientos correctos y finaliza el juego al superar el valor 8.
-            reinciar = False                                                                        # Variable cambia de False a True cuando de desee volver a jugar.
+            # Tablero que representa los valores iniciales de cada fila y columna.
+            tablero = [[1,2,3], [4,5,6], [7,8,9]]   
+            # Variable que cuenta los movimientos correctos y finaliza el juego al superar el valor 8.                                                
+            contador = 0
+            # Variable cambia de False a True cuando de desee volver a jugar.                                                                          
+            reinciar = False                                                                        
                                                                                                     
             print("\nEscribe el nombre del jugador nº 1 y a continuación el del jugador nº 2.\n")
             jugador1 = input("Nombre del jugador 1: ")
             jugador2 = input("Nombre del jugador 2: ")
             print(f"\nBienvenidos {jugador1} y {jugador2}. Comencemos con el juego!\n")
 
-            while(True):                                                                            # Segundo bucle que consta de 2 partes. Un bucle que que sólo finaliza cuando la variable                      
-                                                                                                    # reinicar se establezca como "True" y un bloque "else" que evalúa si se desea comenzar
+            # Segundo bucle que consta de 2 partes. Un bucle que que sólo finaliza cuando la variable
+            while(True):                                                                                                  
+                # reinicar se establezca como "True" y un bloque "else" que evalúa si se desea comenzar una nueva partida.                                                                                    
                 while reinciar == False:  
-                                                                                                    # una nueva partida.
+                                                                                                    
                     DibujarTablero(tablero)
                     Movimiento(tablero, contador)
                     contador +=1
 
-                    if Victoria(tablero) == jugador1:                                               # Evalúa la victoria del jugador 1.
+                    # Evalúa la victoria del jugador 1.
+                    if Victoria(tablero) == jugador1:                                               
                         DibujarTablero(tablero)
                         print(f"\nFelicitaciones {jugador1}, has ganado!! Lo siento {jugador2}, \
 tendrás que practicar más.")
-                        reinciar = True                                                             # Reinciar cambia de estado para salir del bucle.
+                        # Reinciar cambia de estado para salir del bucle.
+                        reinciar = True                                                             
 
-                    elif Victoria(tablero) == jugador2:                                             # Evalúa la victoria del jugador 1.
+                    # Evalúa la victoria del jugador 1.
+                    elif Victoria(tablero) == jugador2:                                             
                         DibujarTablero(tablero)
                         print(f"\nFelicitaciones {jugador2}, has ganado!! Lo siento {jugador1}, \
 tendrás que practicar más.")
-                        reinciar = True                                                             # Reinciar cambia de estado para salir del bucle.
-                        
-                    elif contador > 8:                                                              # Cuando el contador supera el 8 significa que ya no hay movimientos posibles.
-                        DibujarTablero(tablero)                                                     # Si llegado a este punto no hay un ganador entonces hay un empate.
-                        print(f"\nPffff, qué aburrido, han empatado.")
-                        reinciar = True                                                             # Reinciar cambia de estado para salir del bucle.
+                        # Reinciar cambia de estado para salir del bucle.
+                        reinciar = True                                                             
 
-                else:                                                                               # Este bloque "else" se ocupa de reiniciar el juego o no.
+                    # Cuando el contador supera el 8 significa que ya no hay movimientos posibles.    
+                    elif contador > 8:   
+                        # Si llegado a este punto no hay un ganador entonces hay un empate.                                                           
+                        DibujarTablero(tablero)                                                     
+                        print(f"\nPffff, qué aburrido, han empatado.")
+                        # Reinciar cambia de estado para salir del bucle.
+                        reinciar = True                                                             
+
+                # Este bloque "else" se ocupa de reiniciar el juego o no.
+                else:                                                                               
                     opciones_validas = ["S", "s", "N", "n"]
                     reinciar = input("\nQuieren volver a jugar? Si es así, elijan 'S'. En caso \
 contrario elijan 'N'. ")
                     if reinciar not in opciones_validas:
                         print(f"\nTe he pedido que escribas 'S' o 'N' y escribes \"{reinciar}\"! \
 No es tan difícil. Vuelva a intentarlo.")
-                    elif reinciar in opciones_validas[:2]:                                          # Continuar jugando. Se restablece todo como al inicio sin salir del segundo bucle.
+                    # Continuar jugando. Se restablece todo como al inicio sin salir del segundo bucle.
+                    elif reinciar in opciones_validas[:2]:                                          
                         reinciar = False
                         contador = 0
                         tablero = [[1,2,3], [4,5,6], [7,8,9]]
-                    elif reinciar in opciones_validas[2:]:                                          # No continuar. Se sale del segundo bucle.
+                    # No continuar. Se sale del segundo bucle.
+                    elif reinciar in opciones_validas[2:]:                                          
                         print(f"\nHasta la próxima {jugador1} y {jugador2}")
                         break
-                    
-        break                                                                                       # Finaliza el primer bucle y termina el juego.
+        # Finaliza el primer bucle y termina el juego.            
+        break                                                                                       
 except KeyboardInterrupt:
     print("\n\nOk, no era necesario ser tan directo! Si no quiere seguir jugando no hay problema. Hasta luego.")
