@@ -11,6 +11,6 @@
 
 ##
 
-![Imágen ilustrativa del juego.](/assets/Imágenes/6.png)
+![Imágen ilustrativa del juego.](./Imágenes/6.png)
 
 ##
