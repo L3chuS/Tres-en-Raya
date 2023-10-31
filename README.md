@@ -11,6 +11,6 @@
 
 ##
 
-![Imágen ilustrativa del juego.](https://raw.githubusercontent.com/L3chuS/Tres-en-Raya/main/Im%C3%A1genes/6.png?token=GHSAT0AAAAAACJS2SNMWRJ2ZEFWOTRBOUSYZKAMD4A)
+![Imágen ilustrativa del juego.](/assets/Imágenes/6.png)
 
 ##
