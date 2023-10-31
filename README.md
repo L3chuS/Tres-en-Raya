@@ -22,9 +22,7 @@
 
 ##### >> Una vez finalizado nos pregunta si querémos finalizar o volver a jugar.  
 
-![Imágen ilustrativa del juego.](./Imágenes/5.png) 
-
-##
+![Imágen ilustrativa del juego.](./Imágenes/5.png)   
 
 ## ![Imágen ilustrativa del juego.](./Imágenes/7.png) Hola, soy Esteban Santos Mendoza!!  
 
