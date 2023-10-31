@@ -3,7 +3,7 @@
 ## Es un juego realizado con Python que se compone de 4 funciones que dan lugar a un intercambio interactivo por consola emulando al clásico juego. 
 ##
 
-![This is an alt text.](https://raw.githubusercontent.com/L3chuS/Tres-en-Raya/main/Im%C3%A1genes/4.png?token=GHSAT0AAAAAACJS2SNMLHTWQCQFI7SKG7KKZKAMGSA)
+![Imágen ilustrativa del juego.](https://raw.githubusercontent.com/L3chuS/Tres-en-Raya/main/Im%C3%A1genes/4.png?token=GHSAT0AAAAAACJS2SNMLHTWQCQFI7SKG7KKZKAMGSA)
 
 ##
 
@@ -11,6 +11,6 @@
 
 ##
 
-![This is an alt text.](https://raw.githubusercontent.com/L3chuS/Tres-en-Raya/main/Im%C3%A1genes/6.png?token=GHSAT0AAAAAACJS2SNMWRJ2ZEFWOTRBOUSYZKAMD4A)
+![Imágen ilustrativa del juego.](https://raw.githubusercontent.com/L3chuS/Tres-en-Raya/main/Im%C3%A1genes/6.png?token=GHSAT0AAAAAACJS2SNMWRJ2ZEFWOTRBOUSYZKAMD4A)
 
 ##
