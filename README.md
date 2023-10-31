@@ -8,19 +8,19 @@
 
 ![Imágen ilustrativa del juego.](./Imágenes/6.png)  
 
-##### Inicialmente el juego nos da una cálida bienvenida:  
+##### >> Inicialmente el juego nos da una cálida bienvenida:  
 
 ![Imágen ilustrativa del juego.](./Imágenes/1.png)  
 
-##### Seguido de esto nos pide añadir los nombres de los 2 jugadores.  
+##### >> Seguido de esto nos pide añadir los nombres de los 2 jugadores.  
 
 ![Imágen ilustrativa del juego.](./Imágenes/2.png)  
 
-##### Nos da la bienvenida y comienza el juego.  
+##### >> Nos da la bienvenida y comienza el juego.  
 
 ![Imágen ilustrativa del juego.](./Imágenes/3.png)  
 
-##### Una vez finalizado nos pregunta si querémos finalizar o volver a jugar.  
+##### >> Una vez finalizado nos pregunta si querémos finalizar o volver a jugar.  
 
 ![Imágen ilustrativa del juego.](./Imágenes/5.png)   
 
