@@ -1,10 +1,11 @@
 # Juego Tres en Raya
 
-![Imágen ilustrativa del juego.](./Imágenes/Fotoretrato 1 pequeño.png) 
+![Imágen ilustrativa del juego.](./Imágenes/8.png) 
 
 ##### Es un juego realizado con Python que se compone de 4 funciones que dan lugar a un intercambio interactivo por consola emulando al clásico juego.  
 
-![Imágen ilustrativa del juego.](./Imágenes/Fotoretrato 1.png) 
+![Imágen ilustrativa del juego.](./Imágenes/7.png)
+
   
 ![Imágen ilustrativa del juego.](./Imágenes/4.png)  
 
