@@ -236,4 +236,3 @@ No es tan difícil. Vuelva a intentarlo.")
 except KeyboardInterrupt:
     print("\n\nOk, no era necesario ser tan directo! Si no quiere seguir jugando no hay problema. Hasta luego.")
 
- 
