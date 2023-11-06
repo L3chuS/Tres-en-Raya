@@ -12,20 +12,19 @@
 
 ![Imágen ilustrativa del juego.](./Imágenes/1.png)  
 
-##### >> Seguido de esto nos pide añadir los nombres de los 2 jugadores.  
+##### >> Seguido de esto nos pide añadir los nombres de los 2 jugadores:  
 
 ![Imágen ilustrativa del juego.](./Imágenes/2.png)  
 
-##### >> Nos da la bienvenida y comienza el juego.  
+##### >> Nos da la bienvenida y comienza el juego:  
 
 ![Imágen ilustrativa del juego.](./Imágenes/3.png)  
 
-##### >> Una vez finalizado nos pregunta si querémos finalizar o volver a jugar.  
+##### >> Una vez finalizado nos pregunta si querémos finalizar o volver a jugar:  
 
 ![Imágen ilustrativa del juego.](./Imágenes/5.png)   
 
-## ![Imágen ilustrativa del juego.](./Imágenes/7.png) Hola, soy Esteban Santos Mendoza!!  
+## ![Imágen perfil.](https://raw.githubusercontent.com/L3chuS/L3chus/main/Perfil_Emoji.png) Hola, soy Esteban Santos Mendoza!!  
 
 ##### Soy informático que trabaja hace 5 años en el mundo del soporte técnico. Actualmente me estoy formando como desarrollador en Python.
 ##### En mi perfil de GitHub tienes más información sobre mi. Saludos!
-
